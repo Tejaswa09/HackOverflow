@@ -12,6 +12,7 @@ const fetchCalendarEvents = async (req, res) => {
     if (response.ok) {
       const data = await response.json();
       const filteredEvents = data.items.map((event) => ({
+        id: event.id,
         startDateTime: event.start.dateTime,
         email: event.creator.email ? event.creator.email : "Unknown",
         eventName: event.summary,

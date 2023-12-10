@@ -39,7 +39,7 @@ export const Login = () => {
 
   return (
     <>
-      <main className="flex justify-center content-center flex-col gap-[3rem] flex-wrap">
+      <main className="flex justify-center items-center flex-col gap-[3rem] flex-wrap">
         <img
           src={logo}
           alt=""
@@ -51,10 +51,10 @@ export const Login = () => {
 
         <section
           data-function="form"
-          className="flex justify-center content-center flex-col gap-[3rem] flex-wrap rounded-[10px]"
+          className="flex justify-center items-center flex-col gap-[3rem] flex-wrap rounded-[10px]"
         >
           {/*Form?*/}
-          <div className="px-[1.5rem] flex justify-center content-center gap-[1.2rem] flex-wrap">
+          <div className="px-[1.5rem] flex justify-center items-center gap-[1.2rem] flex-wrap">
             <label className="text-[1.2rem] text-[#FF007A]" htmlFor="username">
               Username:
             </label>
@@ -67,7 +67,7 @@ export const Login = () => {
               id="username"
             />
           </div>
-          <div className="px-[1.5rem] flex justify-center content-center gap-[1.2rem] flex-wrap">
+          <div className="px-[1.5rem] flex justify-center items-center gap-[1.2rem] flex-wrap">
             <label className="text-[1.2rem] text-[#FF007A]" htmlFor="password">
               Password:
             </label>
@@ -80,11 +80,11 @@ export const Login = () => {
               id="password"
             />
           </div>
-          <div className="button-holder flex justify-center flex-col content-center gap-[1.5rem] flex-wrap">
+          <div className="button-holder flex justify-center flex-col items-center gap-[1.5rem] flex-wrap">
             <button
               data-function="login"
               onClick={postData}
-              className="font-['Cairo'] py-[0.5rem] px-[1.2rem] text-[1.2rem] text-[#FF007A]"
+              className="font-['Cairo'] py-[0.4rem] px-[4rem] text-[1.2rem] text-[#FF007A]"
             >
               LOGIN
             </button>

@@ -43,14 +43,14 @@ button[data-function="login"] {
   transition: background-color 0.3s, box-shadow 0.3s, color 0.3s;
 }
 
-button[data-function="submit"]:hover {
+button[data-function="login"]:hover {
   border-radius: 5px;
   background-color: #ff007a;
   color: #17202a;
   box-shadow: none;
 }
 
-button[data-function="submit"]:active {
+button[data-function="login"]:active {
   box-shadow: 0 0 10px #ff007a;
 }
 

@@ -50,8 +50,8 @@ const CustomModal = () => {
   const style = {
     position: "absolute",
     width: "45vw",
-    height: "70vh",
-    top: "54%",
+    height: "80vh",
+    top: "45%",
     left: "48%",
     transform: "translate(-50%, -50%)",
     bgcolor: "#17202a",
@@ -71,7 +71,7 @@ const CustomModal = () => {
   return (
     <>
       <button
-        className="flex gap-[0.5rem] justify-center content-center py-[0.5rem] px-[1.2rem] rounded-[14px] text-[1rem] bg-[#FF007A] text-[#000]"
+        className="flex gap-[0.5rem] justify-center items-center py-[0.5rem] px-[1.2rem] rounded-[14px] text-[1rem] bg-[#FF007A] text-[#000]"
         onClick={handleOpen}
       >
         <FontAwesomeIcon style={{ alignSelf: "center" }} icon={faMicrochip} />
@@ -113,25 +113,25 @@ const CustomModal = () => {
               label=" Upload or Drop a File Right Here"
             />
           </div>
-          <div>
+          <div className="flex gap-[2rem]">
             <button
               // onClick={postData}
               data-function="post-video"
-              className="font-['Cairo'] py-[0.5rem] text-[1.2rem] rounded-[14px] bg-[#FF007A] w-[7rem] mx-[auto] mb-[2rem] text-[#000]"
+              className="font-['Cairo'] py-[0.5rem] text-[1rem] rounded-[14px] bg-[#FF007A] w-[7rem] mx-[auto] mb-[2rem] text-[#000]"
             >
               Upload
             </button>
+            <button
+              className=" font-['Cairo'] py-[0.5rem] text-[1rem] rounded-[14px] bg-[#FF007A] w-[7rem] mx-[auto] mb-[2rem] text-[#000]"
+              onClick={handleTransribe}
+            >
+              <FontAwesomeIcon
+                style={{ alignSelf: "center" }}
+                icon={faMicrochip}
+              />
+              <span className="font-['Cairo']">Transcribe</span>
+            </button>
           </div>
-          <button
-            className="flex gap-[0.5rem] justify-center content-center py-[0.5rem] px-[1.2rem] rounded-[14px] text-[1rem] bg-[#FF007A] text-[#000]"
-            onClick={handleTransribe}
-          >
-            <FontAwesomeIcon
-              style={{ alignSelf: "center" }}
-              icon={faMicrochip}
-            />
-            <span className="font-['Cairo']">Transcribe</span>
-          </button>
         </Box>
       </Modal>
     </>
